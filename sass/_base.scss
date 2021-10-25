@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:white;
+    .nav__bar{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+        align-items: center;
+        .logo{
+            h1{
+                color: blue;
+                font-size: xx-large;
+                font-weight: 700;
+            }
+        }
+        .nav__links{
+            ul{
+                display: flex;
+                list-style-type: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        padding: 20px;
+                        font-size: larger;
+                        color: blue;
+                        font-family: 'Architects Daughter', cursive;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .about{
+            display: flex;
+            width: 1100px;
+            margin: 0 auto;
+            .picture{
+                img{
+                    width: 800px;
+                    border-radius: 50%;
+                }
+            }
+            .content{
+                margin-top: 18%;
+                p{
+                    text-align: center;
+                }
+            }
+        }
+        .daily__verses{
+            // width: 900px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            background-color: wheat;
+            h1{
+                text-align: center;
+                color: blue;
+            }
+           div{
+               display: flex;
+               flex-direction: column;
+               width: 600px;
+               margin: 0 auto;
+               padding: 50px;
+               h2{
+                   text-align: center;
+                   color: aqua;
+                   padding: 30px;
+               }
+               h3{
+                   text-align: center;
+               }
+           }
+        }
+        .programmes{
+            padding: 50px;
+            .cards{
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                .upper-column{
+                    display: flex;
+                    column-gap: 10px;
+                    margin: 0 auto;
+                    img{
+                        width: 400px;
+                        height: 400px;
+                    }
+                    .content{
+                        width: 400px;
+                        background-color: wheat;
+                        padding: 30px;
+                        p{
+                            text-align: center;
+                            color: black;
+                            font-family: Georgia, 'Times New Roman', Times, serif;
+                        }
+                    }
+                }
+                .lower-column{
+                    display: flex;
+                    
+                }
+            }
+        }
+        .events{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            column-gap: 20px;
+            
+            .circle{
+                width: 300px;
+                background-color:rgb(252, 252, 237);
+                border: 2px wheat solid;
+                padding: 30px;
+            }
+        }
+    }
+}
