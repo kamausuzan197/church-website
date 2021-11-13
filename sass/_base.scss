@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // overflow: hidden;
 }
 @keyframes animatein {
     from{
@@ -88,7 +87,6 @@ body{
             width: 1100px;
             margin: 0 auto;
             animation: animatein 0.75s;
-            padding: 10px;
             @include respond(tablet){
                 width: 450px;
                 display: flex;
@@ -228,47 +226,27 @@ body{
             row-gap: 10px;
             div{
                 display: flex;
-                width: 500px;
                 justify-content: space-evenly;
                 align-items: center;
-                margin: 0 auto;
                 @include respond (tablet){
-                    width: 450px;
                     flex-direction: column;
                     row-gap: 5px;
-                    align-items:center ;
                 }
                 @include respond (mobile){
-                    width: 450px;
                     flex-direction: column;
                     row-gap: 5px;
-                    align-items: center;
-                    h3{
-                        text-align: center;
-                    }
                 }
                 .circle{
                     width: 300px;
                     background-color:rgb(252, 252, 237);
                     border: 2px wheat solid;
                     padding: 30px;
-                    @include respond (mobile){
-                        flex-direction: column;
-                        row-gap: 5px;
-                        align-items: center;
-                        h3{
-                            text-align: center;
-                        }
-                    }
                 }
             }
         }
         .contact{
             background-color: rgb(216, 213, 213);
             padding: 20px;
-            @include respond(tablet){
-                width: 450px;
-            }
             @include respond(mobile){
                 width: 450px;
             }
@@ -280,9 +258,6 @@ body{
                 margin: 0 auto;
                 padding: 10px;
                 align-items: center;
-                @include respond(mobile){
-                    width: 368px;
-                }
                 #cnt{
                     width: 100%;
                     padding: 10px;
@@ -310,9 +285,6 @@ body{
         align-items: center;
         background-color: whitesmoke;
         padding: 20px;
-        @include respond(tablet){
-            width: 450px;
-        }
         @include respond(mobile){
             width: 450px;
         }
