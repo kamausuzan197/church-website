@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ark</title>
     <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
     <nav class="nav__bar">
@@ -26,8 +27,25 @@
                 <li>
                     <a href="#events">Events</a>
                 </li>
+                <li>
+                    <a href="#contacts">Contact</a>
+                </li>
             </ul>
         </div>
+        <button class="humbuger is-active">
+            <div class="bar"><i class="fas fa-bars"></i></div>
+        </button>
+    </nav>
+    <nav class="mobile-nav">
+        <ul class="nav__items">
+            <li class="nav__links">
+                <a href="#about">About</a>
+                <a href="#verses">Daily verses</a>
+                <a href="#programmes">Programmes</a>
+                <a href="#events">Events</a>
+                <a href="#contacts">Contacts</a>
+            </li>
+        </ul>
     </nav>
     <main>
         <section class="about" id="about">
@@ -55,6 +73,7 @@
             </div>
         </section>
         <section class="programmes" id="programmes">
+            <h2 style="text-align: center; color: blue;">Programmes</h2>
             <div class="cards">
                 <div class="upper-column">
                     <div class="event">
@@ -141,25 +160,51 @@
             </div>
         </section>
         <section class="events" id="events">
-            <div class="circle">
-                <p>
-                    <h2>Women meeting</h2>
-                    <h3>Tuesday 6pm, Venue Church</h3>
-                </p>
-            </div>
-            <div class="circle">
-                <p>
-                    <h2>Women meeting</h2>
-                    <h3>Tuesday 6pm, Venue Church</h3>
-                </p>
-            </div>
-            <div class="circle">
-                <p>
-                    <h2>Women meeting</h2>
-                    <h3>Tuesday 6pm, Venue Church</h3>
-                </p>
+            <h2 style="text-align: center; color: blue;">Events</h2>
+            <div>
+                <div class="circle">
+                    <p>
+                        <h2>Women meeting</h2>
+                        <h3>Tuesday 6pm, Venue Church</h3>
+                    </p>
+                </div>
+                <div class="circle">
+                    <p>
+                        <h2>Women meeting</h2>
+                        <h3>Tuesday 6pm, Venue Church</h3>
+                    </p>
+                </div>
+                <div class="circle">
+                    <p>
+                        <h2>Women meeting</h2>
+                        <h3>Tuesday 6pm, Venue Church</h3>
+                    </p>
+                </div>
             </div>
         </section>
+        <section class="contact" id="contacts">
+            <h2 style="text-align: center; color: blue;">Contact</h2>
+            <form id="form">
+                <input type="email" id="cnt" name="cnt" placeholder="Email address">
+                <input type="text" name="cnt" id="cnt" placeholder="Subject">
+                <textarea name="cnt" id="cnt" placeholder="message" rows="10" cols="30"></textarea>
+                <button id="btn" value="sent">
+                    <i class="fas fa-paper-plane">Sent</i>
+                </button>
+            </form>
+        </section>
     </main>
+    <footer class="footer">
+        <div>
+            <h2>@copyright Ark 2021</h2>
+        </div>
+        <div class="social__plat">
+            <i class="fab fa-facebook"> Facebook</i>
+            <i class="fab fa-twitter">  Twitter</i>
+            <i class="fab fa-youtube">   Youtube</i>
+            <i class="fab fa-instagram">  Instagram</i>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>
