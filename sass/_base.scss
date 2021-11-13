@@ -88,6 +88,7 @@ body{
             width: 1100px;
             margin: 0 auto;
             animation: animatein 0.75s;
+            padding: 10px;
             @include respond(tablet){
                 width: 450px;
                 display: flex;
@@ -232,10 +233,12 @@ body{
                 @include respond (tablet){
                     flex-direction: column;
                     row-gap: 5px;
+                    align-items:center ;
                 }
                 @include respond (mobile){
                     flex-direction: column;
                     row-gap: 5px;
+                    align-items: center;
                 }
                 .circle{
                     width: 300px;
