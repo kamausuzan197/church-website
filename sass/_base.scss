@@ -228,14 +228,18 @@ body{
             row-gap: 10px;
             div{
                 display: flex;
+                width: 500px;
                 justify-content: space-evenly;
                 align-items: center;
+                margin: 0 auto;
                 @include respond (tablet){
+                    width: 450px;
                     flex-direction: column;
                     row-gap: 5px;
                     align-items:center ;
                 }
                 @include respond (mobile){
+                    width: 450px;
                     flex-direction: column;
                     row-gap: 5px;
                     align-items: center;
