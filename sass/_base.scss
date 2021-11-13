@@ -239,12 +239,23 @@ body{
                     flex-direction: column;
                     row-gap: 5px;
                     align-items: center;
+                    h3{
+                        text-align: center;
+                    }
                 }
                 .circle{
                     width: 300px;
                     background-color:rgb(252, 252, 237);
                     border: 2px wheat solid;
                     padding: 30px;
+                    @include respond (mobile){
+                        flex-direction: column;
+                        row-gap: 5px;
+                        align-items: center;
+                        h3{
+                            text-align: center;
+                        }
+                    }
                 }
             }
         }
